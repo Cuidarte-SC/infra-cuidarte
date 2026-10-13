@@ -46,6 +46,7 @@ services:
       DATABASE_URL: postgres://${POSTGRES_USER}:${POSTGRES_PASSWORD}@db:5432/${POSTGRES_DB}
       JWT_SECRET: ${JWT_SECRET}
       JWT_EXPIRES_IN: ${JWT_EXPIRES_IN}
+      DATA_ENCRYPTION_KEY: ${DATA_ENCRYPTION_KEY}   # NFR-SEG-3: cifrado en reposo
       DOCUMENTOS_DIR: /data/documentos
       TZ: America/Santiago
     ports:
